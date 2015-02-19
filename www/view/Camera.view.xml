@@ -1,0 +1,14 @@
+<sap.ui.core.mvc:View controllerName="view.Camera"
+    xmlns="sap.m"
+    xmlns:sap.ui.core.mvc="sap.ui.core.mvc" >
+    <Page title="Camera Picture" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <Image id="image0" src="{/idImageSrc}" width="100%" height="100%"></Image>
+            <Text id="text0" text="{/idText}" textAlign="Center" width="100%" maxLines="0">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+            </Text>
+        </content>
+    </Page>
+</sap.ui.core.mvc:View>

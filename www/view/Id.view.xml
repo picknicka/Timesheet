@@ -1,0 +1,17 @@
+<sap.ui.core.mvc:View controllerName="view.Id"
+    xmlns="sap.m"
+    xmlns:sap.ui.core.mvc="sap.ui.core.mvc" >
+    <Page title="Unique Device Id" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <VBox id="vbox0" width="100%" direction="Column" justifyContent="SpaceAround" alignItems="Start">
+                <items>
+                    <Text id="text0" text="{/idAppId}" textAlign="Center" width="100%" maxLines="0">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                    </Text>
+                </items>
+            </VBox>
+        </content>
+    </Page>
+</sap.ui.core.mvc:View>

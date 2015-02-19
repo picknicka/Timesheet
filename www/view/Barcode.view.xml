@@ -1,0 +1,18 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="view.Barcode" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Barcode" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+		    <VBox id="vbox0" width="100%" direction="Column" justifyContent="SpaceAround" alignItems="Start">
+                <items>
+                    <Text id="text0" text="{/idBarcode}" textAlign="Center" width="100%" maxLines="0">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                    </Text>
+                </items>
+            </VBox>
+		</content>
+	</Page>
+</core:View>

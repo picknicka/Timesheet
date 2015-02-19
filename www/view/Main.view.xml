@@ -1,0 +1,86 @@
+<sap.ui.core.mvc:View controllerName="view.Main"
+    xmlns="sap.m"
+    xmlns:sap.ui.core="sap.ui.core"
+    xmlns:sap.ui.core.mvc="sap.ui.core.mvc" >
+    <Page title="SAPUI5 Hybrid">
+        <content>
+            <VBox id="vbox0" width="100%" direction="Column" justifyContent="SpaceAround">
+                <items>
+                    <HBox id="hbox5" height="20px" width="100%" justifyContent="SpaceAround">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                    </HBox>
+                    <HBox id="hbox0" width="100%" justifyContent="SpaceAround" alignItems="Start">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                        <items>
+                            <sap.ui.core:Icon press="onPressCamera" id="icon0" src="sap-icon://camera" size="8em" color="#ffffff" width="150px" backgroundColor="#009de0" activeBackgroundColor="#1c4c98">
+                                <sap.ui.core:layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </sap.ui.core:layoutData>
+                            </sap.ui.core:Icon>
+                            <sap.ui.core:Icon press="onPressBarcode" id="icon1" src="sap-icon://along-stacked-chart" size="8em" color="#ffffff" width="150px" backgroundColor="#009de0" activeBackgroundColor="#1c4c98">
+                                <sap.ui.core:layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </sap.ui.core:layoutData>
+                            </sap.ui.core:Icon>
+                        </items>
+                    </HBox>
+                    <HBox id="hbox1" height="30px" width="100%" justifyContent="SpaceAround">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                        <items>
+                            <Label id="label0" design="Bold" text="Camera" textAlign="Center" width="150px">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </layoutData>
+                            </Label>
+                            <Label id="label1" design="Bold" text="Barcode" textAlign="Center" width="150px">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </layoutData>
+                            </Label>
+                        </items>
+                    </HBox>
+                    <HBox id="hbox2" width="100%" justifyContent="SpaceAround">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                        <items>
+                            <sap.ui.core:Icon press="onPressId" id="icon2" src="sap-icon://activity-individual" size="8em" color="#ffffff" width="150px" backgroundColor="#009de0" activeBackgroundColor="#1c4c98">
+                                <sap.ui.core:layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </sap.ui.core:layoutData>
+                            </sap.ui.core:Icon>
+                            <sap.ui.core:Icon press="onPressExplore" id="icon3" src="sap-icon://explorer" size="8em" color="#ffffff" width="150px" backgroundColor="#009de0" activeBackgroundColor="#1c4c98">
+                                <sap.ui.core:layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </sap.ui.core:layoutData>
+                            </sap.ui.core:Icon>
+                        </items>
+                    </HBox>
+                    <HBox id="hbox3" height="30px" width="100%" justifyContent="SpaceAround">
+                        <layoutData>
+                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                        </layoutData>
+                        <items>
+                            <Label id="label2" design="Bold" text="Unique Device Id" textAlign="Center" width="150px">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </layoutData>
+                            </Label>
+                            <Label id="label3" design="Bold" text="Explore" textAlign="Center" width="150px">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                </layoutData>
+                            </Label>
+                        </items>
+                    </HBox>
+                </items>
+            </VBox>
+        </content>
+    </Page>
+</sap.ui.core.mvc:View>

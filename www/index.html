@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-resourceroots='{"view": "./"}'
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		
+		<script type="text/javascript" src="cordova.js"></script>
+		
+		<script>
+		document.addEventListener("deviceready", function() {
+				function getUrlParameterName(sParam)
+				{
+					var sPageURL = window.location.search.substring(1);
+					var sURLVariables = sPageURL.split('&');
+					for (var i = 0; i < sURLVariables.length; i++) 
+					{
+						var sParameterName = sURLVariables[i].split('=');
+						if (sParameterName[0] === sParam) 
+						{
+							return true;
+						}
+					}
+					return false;
+				} 
+			
+				sap.ui.localResources("view");
+				
+				function startApp(context) {
+				    
+				    var app = new sap.m.App("idMyApp", {initialPage:"idMain"});
+					var page = sap.ui.view({id:"idMain", viewName:"view.Main", type:sap.ui.core.mvc.ViewType.XML  });
+					var pageCamera = sap.ui.view({id:"idCamera", viewName:"view.Camera", type:sap.ui.core.mvc.ViewType.XML});
+					var pageBarcode = sap.ui.view({id:"idBarcode", viewName:"view.Barcode", type:sap.ui.core.mvc.ViewType.XML});
+					var pageId = sap.ui.view({id:"idId", viewName:"view.Id", type:sap.ui.core.mvc.ViewType.XML});
+					var pageExplore = sap.ui.view({id:"idExplore", viewName:"view.Explore", type:sap.ui.core.mvc.ViewType.XML});
+					app.addPage(page).addPage(pageCamera).addPage(pageBarcode).addPage(pageId).addPage(pageExplore);
+					app.placeAt("content");
+		
+				}
+				startApp();
+		}, false);
+		</script>
+		
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
+	
+
+
+

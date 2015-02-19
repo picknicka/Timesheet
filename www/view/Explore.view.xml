@@ -1,0 +1,107 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:sap.me="sap.me"  
+	xmlns:sap.ui.core="sap.ui.core" 
+	xmlns="sap.m" controllerName="view.Explore" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Explore" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <IconTabBar id="bar0" selectedKey="Open">
+                <items>
+                    <IconTabFilter text="Orders" key="All" count="22" showAll="true"></IconTabFilter>
+                    <IconTabFilter text="Open" key="Open" count="10" icon="sap-icon://task" iconColor="Critical">
+                        <content>
+                            <sap.me:Calendar id="calendar0" singleRow="false" currentDate="Thu Feb 05 2015" days="So.,Mo.,Di.,Mi.,Do.,Fr.,Sa." months="Jan.,Feb.,März,Apr.,Mai,Juni,Juli,Aug.,Sep.,Okt.,Nov.,Dez."></sap.me:Calendar>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter text="Shipped" key="Shipped" count="5" icon="sap-icon://shipping-status" iconColor="Positive">
+                        <content>
+                            <HBox id="hbox0" width="100%">
+                                <items>
+                                    <Image id="image0" src="data:image/jpeg;base64,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" width="300px" height="140px">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Image>
+                                </items>
+                            </HBox>
+                            <HBox id="hbox1" width="100%">
+                                <items>
+                                    <Label id="label0" text="Name:" width="50px">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Label>
+                                    <Input id="input0" width="220px">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Input>
+                                </items>
+                            </HBox>
+                            <HBox id="hbox2" width="100%">
+                                <items>
+                                    <Label id="label1" text="Date" width="50px">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Label>
+                                    <Input id="input1" width="220px" type="Date">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Input>
+                                </items>
+                            </HBox>
+                            <HBox id="hbox3" width="100%">
+                                <items>
+                                    <Label id="label2" text="List:" width="50px">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Label>
+                                    <Select id="select0" width="220px" selectedKey="item1">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                        <items>
+                                            <sap.ui.core:ListItem text="List Item 1" key="item1">
+                                                <sap.ui.core:customData>
+                                                    <sap.ui.core:CustomData key="sapMSltListItem" value="Element sap.m.StandardListItem#__item15"></sap.ui.core:CustomData>
+                                                </sap.ui.core:customData>
+                                            </sap.ui.core:ListItem>
+                                            <sap.ui.core:ListItem text="List Item 2" key="item2">
+                                                <sap.ui.core:customData>
+                                                    <sap.ui.core:CustomData key="sapMSltListItem" value="Element sap.m.StandardListItem#__item16"></sap.ui.core:CustomData>
+                                                </sap.ui.core:customData>
+                                            </sap.ui.core:ListItem>
+                                            <sap.ui.core:ListItem text="List Item 3" key="item3">
+                                                <sap.ui.core:customData>
+                                                    <sap.ui.core:CustomData key="sapMSltListItem" value="Element sap.m.StandardListItem#__item17"></sap.ui.core:CustomData>
+                                                </sap.ui.core:customData>
+                                            </sap.ui.core:ListItem>
+                                        </items>
+                                    </Select>
+                                </items>
+                            </HBox>
+                            <HBox id="hbox4" width="100%">
+                                <items>
+                                    <Button id="button0" text="OK" width="150px" icon="sap-icon://accept">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Button>
+                                    <Button id="button1" text="Cancel" width="150px" icon="sap-icon://undo">
+                                        <layoutData>
+                                            <FlexItemData alignSelf="Stretch"></FlexItemData>
+                                        </layoutData>
+                                    </Button>
+                                </items>
+                            </HBox>
+                        </content>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</core:View>
